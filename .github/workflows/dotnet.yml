@@ -21,10 +21,10 @@ jobs:
       uses: microsoft/setup-msbuild@v1
      
     - name: Setup NuGet
-      run: NuGet/setup-nuget@v1.0.5
+      uses: NuGet/setup-nuget@v1.0.5
       
     - name: setup-msbuild
-      run: microsoft/setup-msbuild@v1.1
+      uses: microsoft/setup-msbuild@v1.1
       
     - name: Restore Packages
       run: nuget restore Umbraco7_Demos.sln
