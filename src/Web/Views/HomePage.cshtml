@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "_Layout.cshtml";
+
+    var baseContent = Umbraco.Field("baseContent", recursive: true).ToHtmlString();
+}
+
+<main class="middle-components">
+    @Html.Raw(baseContent)
+</main>
